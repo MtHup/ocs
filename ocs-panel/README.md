@@ -11,37 +11,30 @@ badvpn : badvpn-udpgw port 7300
 nginx : 81
 
 __________________________________________________
-# **วิธีติดตั้ง ( Debian 7 เท่านั้น )**
+#วิธีติดตั้ง ( Debian 7 เท่านั้น )
 
-- **OCS Panel Only**
-```
-wget https://raw.githubusercontent.com/ZENON-VPN/ocs-panel/master/OCSAutoScrptz.sh && chmod +x OCSAutoScrptz.sh && ./OCSAutoScrptz.sh
-```
+    OCS Panel Only
 
-- **OCS Panel & VPS**
-```
-wget https://raw.githubusercontent.com/ZENON-VPN/ocs-panel/master/VPSnOCScrptZ.sh && chmod +x VPSnOCScrptZ.sh && ./VPSnOCScrptZ.sh
-```
+wget https://github.com/MtHup/ocs/ocs-panel/master/OCSAutoScrptz.sh && chmod +x OCSAutoScrptz.sh && ./OCSAutoScrptz.sh
 
-- **VPS Only (For Servers)** 
-```
-wget https://raw.githubusercontent.com/ZENON-VPN/ocs-panel/master/VPScrptZ.sh && chmod +x VPScrptZ.sh && ./VPScrptZ.sh
-```
+    OCS Panel & VPS
 
-- **Disable Change Password in Panel**
-```
-wget https://raw.githubusercontent.com/ZENON-VPN/ocs-panel/master/DsblChngPW.sh && chmod +x DsblChngPW.sh && ./DsblChngPW.sh
-```
+wget https://raw.githubusercontent.com/MtHup/ocs/ocs-panel/master/VPSnOCScrptZ.sh && chmod +x VPSnOCScrptZ.sh && ./VPSnOCScrptZ.sh
 
-- **Updates : Kill Multilogin, Delete All Expired Users**
-```
-cd && wget -O ClrkzOCSUpdate "https://raw.githubusercontent.com/ZENON-VPN/ocs-panel/master/update-ocs.sh" && chmod +x ClrkzOCSUpdate && sed -i -e 's/\r$//' ClrkzOCSUpdate && ./ClrkzOCSUpdate && rm ClrkzOCSUpdate
-```
+    VPS Only (For Servers)
 
-__________________________________________________
-**NOTE**
+wget https://raw.githubusercontent.com/MtHup/ocs/ocs-panel/master/VPScrptZ.sh && chmod +x VPScrptZ.sh && ./VPScrptZ.sh
 
- -ZENON-VPN.NET-
- 
- **TimeZone**   :  Thailand
-___________________________________________________
+    Disable Change Password in Panel
+
+wget https://raw.githubusercontent.com/MtHup/ocs/ocs-panel/master/DsblChngPW.sh && chmod +x DsblChngPW.sh && ./DsblChngPW.sh
+
+    Updates : Kill Multilogin, Delete All Expired Users
+
+cd && wget -O ClrkzOCSUpdate "https://raw.githubusercontent.com/MtHup/ocs/ocs-panel/master/update-ocs.sh" && chmod +x ClrkzOCSUpdate && sed -i -e 's/\r$//' ClrkzOCSUpdate && ./ClrkzOCSUpdate && rm ClrkzOCSUpdate
+
+NOTE
+
+-MTVPN-TH-
+
+TimeZone : Thailand
